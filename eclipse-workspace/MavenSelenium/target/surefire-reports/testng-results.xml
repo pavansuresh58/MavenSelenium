@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="25" passed="21" failed="2" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-11T17:10:43 IST" name="Surefire suite" finished-at="2024-04-11T17:13:45 IST" duration-ms="181987">
+    <groups>
+    </groups>
+    <test started-at="2024-04-11T17:10:43 IST" name="Surefire test" finished-at="2024-04-11T17:13:45 IST" duration-ms="181987">
+      <class name="TestNGDemo.TestDisableFromExecution">
+        <test-method signature="testcase1()[pri:0, instance:TestNGDemo.TestDisableFromExecution@3bd40a57]" started-at="2024-04-11T17:13:45 IST" name="testcase1" finished-at="2024-04-11T17:13:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase1 -->
+        <test-method signature="testcase2()[pri:0, instance:TestNGDemo.TestDisableFromExecution@3bd40a57]" started-at="2024-04-11T17:13:45 IST" name="testcase2" finished-at="2024-04-11T17:13:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase2 -->
+        <test-method signature="testcase4()[pri:0, instance:TestNGDemo.TestDisableFromExecution@3bd40a57]" started-at="2024-04-11T17:13:45 IST" name="testcase4" finished-at="2024-04-11T17:13:45 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase4 -->
+      </class> <!-- TestNGDemo.TestDisableFromExecution -->
+      <class name="pageObjectModel.TestCases.NewLoginPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:pageObjectModel.TestCases.NewLoginPageTest@327b636c]" started-at="2024-04-11T17:10:55 IST" name="setup" finished-at="2024-04-11T17:11:58 IST" duration-ms="62215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUrl()[pri:1, instance:pageObjectModel.TestCases.NewLoginPageTest@327b636c]" started-at="2024-04-11T17:11:58 IST" name="verifyUrl" finished-at="2024-04-11T17:11:58 IST" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUrl -->
+        <test-method signature="verifyLogin()[pri:2, instance:pageObjectModel.TestCases.NewLoginPageTest@327b636c]" started-at="2024-04-11T17:11:58 IST" name="verifyLogin" finished-at="2024-04-11T17:12:03 IST" duration-ms="5377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageObjectModel.TestCases.NewLoginPageTest@327b636c]" started-at="2024-04-11T17:12:03 IST" name="tearDown" finished-at="2024-04-11T17:12:03 IST" duration-ms="446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- pageObjectModel.TestCases.NewLoginPageTest -->
+      <class name="TestNGDemo.TestDependsOnMethod">
+        <test-method signature="register()[pri:1, instance:TestNGDemo.TestDependsOnMethod@1a0dcaa]" started-at="2024-04-11T17:13:45 IST" name="register" finished-at="2024-04-11T17:13:45 IST" duration-ms="8" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 
+at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
+at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:23)
+at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:33)
+at TestNGDemo.TestDependsOnMethod.register(TestDependsOnMethod.java:14)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method signature="login()[pri:2, instance:TestNGDemo.TestDependsOnMethod@1a0dcaa]" started-at="2024-04-11T17:13:45 IST" name="login" finished-at="2024-04-11T17:13:45 IST" depends-on-methods="TestNGDemo.TestDependsOnMethod.register" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNGDemo.TestDependsOnMethod.login() on instance TestNGDemo.TestDependsOnMethod@1a0dcaa depends on not successfully finished methods 
+[TestNGDemo.TestDependsOnMethod.register() on instance TestNGDemo.TestDependsOnMethod@1a0dcaa]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNGDemo.TestDependsOnMethod.login() on instance TestNGDemo.TestDependsOnMethod@1a0dcaa depends on not successfully finished methods 
+[TestNGDemo.TestDependsOnMethod.register() on instance TestNGDemo.TestDependsOnMethod@1a0dcaa]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- TestNGDemo.TestDependsOnMethod -->
+      <class name="TestNGDemo.TestDemo4_InvocationCount">
+        <test-method signature="enrollForTheCourse()[pri:1, instance:TestNGDemo.TestDemo4_InvocationCount@5e4c8041]" started-at="2024-04-11T17:13:45 IST" name="enrollForTheCourse" finished-at="2024-04-11T17:13:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enrollForTheCourse -->
+        <test-method signature="training()[pri:2, instance:TestNGDemo.TestDemo4_InvocationCount@5e4c8041]" started-at="2024-04-11T17:13:45 IST" name="training" finished-at="2024-04-11T17:13:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- training -->
+        <test-method signature="placementCall()[pri:3, instance:TestNGDemo.TestDemo4_InvocationCount@5e4c8041]" started-at="2024-04-11T17:13:45 IST" name="placementCall" finished-at="2024-04-11T17:13:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placementCall -->
+        <test-method signature="placementCall()[pri:3, instance:TestNGDemo.TestDemo4_InvocationCount@5e4c8041]" started-at="2024-04-11T17:13:45 IST" name="placementCall" finished-at="2024-04-11T17:13:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placementCall -->
+        <test-method signature="placementCall()[pri:3, instance:TestNGDemo.TestDemo4_InvocationCount@5e4c8041]" started-at="2024-04-11T17:13:45 IST" name="placementCall" finished-at="2024-04-11T17:13:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placementCall -->
+      </class> <!-- TestNGDemo.TestDemo4_InvocationCount -->
+      <class name="pageObjectModel.TestCases.LoginPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:pageObjectModel.TestCases.LoginPageTest@13acb0d1]" started-at="2024-04-11T17:10:43 IST" name="setup" finished-at="2024-04-11T17:10:52 IST" duration-ms="9214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUrl()[pri:1, instance:pageObjectModel.TestCases.LoginPageTest@13acb0d1]" started-at="2024-04-11T17:10:52 IST" name="verifyUrl" finished-at="2024-04-11T17:10:52 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUrl -->
+        <test-method signature="verifyTitle()[pri:2, instance:pageObjectModel.TestCases.LoginPageTest@13acb0d1]" started-at="2024-04-11T17:10:52 IST" name="verifyTitle" finished-at="2024-04-11T17:10:52 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method signature="verifyLogin()[pri:3, instance:pageObjectModel.TestCases.LoginPageTest@13acb0d1]" started-at="2024-04-11T17:10:52 IST" name="verifyLogin" finished-at="2024-04-11T17:10:55 IST" duration-ms="2565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageObjectModel.TestCases.LoginPageTest@13acb0d1]" started-at="2024-04-11T17:10:55 IST" name="tearDown" finished-at="2024-04-11T17:10:55 IST" duration-ms="425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- pageObjectModel.TestCases.LoginPageTest -->
+      <class name="TestNGDemo.TestDemo3_Priority">
+        <test-method signature="LoginTest()[pri:2, instance:TestNGDemo.TestDemo3_Priority@3745e5c6]" started-at="2024-04-11T17:13:45 IST" name="LoginTest" description="This is Second test case" finished-at="2024-04-11T17:13:45 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method signature="RegisterTest()[pri:1, instance:TestNGDemo.TestDemo3_Priority@3745e5c6]" started-at="2024-04-11T17:13:45 IST" name="RegisterTest" description="This is First test case" finished-at="2024-04-11T17:13:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterTest -->
+        <test-method signature="SearchProductTest()[pri:3, instance:TestNGDemo.TestDemo3_Priority@3745e5c6]" started-at="2024-04-11T17:13:45 IST" name="SearchProductTest" description="This is Third test case" finished-at="2024-04-11T17:13:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchProductTest -->
+        <test-method signature="AddToCartTest()[pri:4, instance:TestNGDemo.TestDemo3_Priority@3745e5c6]" started-at="2024-04-11T17:13:45 IST" name="AddToCartTest" description="This is Fourth test case" finished-at="2024-04-11T17:13:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCartTest -->
+      </class> <!-- TestNGDemo.TestDemo3_Priority -->
+      <class name="TestNGDemo.TestDemo1">
+        <test-method signature="testCase1()[pri:0, instance:TestNGDemo.TestDemo1@45dd4eda]" started-at="2024-04-11T17:12:03 IST" name="testCase1" finished-at="2024-04-11T17:12:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method signature="testcase2()[pri:0, instance:TestNGDemo.TestDemo1@45dd4eda]" started-at="2024-04-11T17:12:03 IST" name="testcase2" finished-at="2024-04-11T17:12:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase2 -->
+      </class> <!-- TestNGDemo.TestDemo1 -->
+      <class name="TestNGDemo.TestDemo2">
+        <test-method signature="ChromeTest()[pri:1, instance:TestNGDemo.TestDemo2@60611244]" started-at="2024-04-11T17:12:03 IST" name="ChromeTest" finished-at="2024-04-11T17:12:09 IST" duration-ms="5310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChromeTest -->
+        <test-method signature="Firefox()[pri:2, instance:TestNGDemo.TestDemo2@60611244]" started-at="2024-04-11T17:12:09 IST" name="Firefox" finished-at="2024-04-11T17:13:35 IST" duration-ms="85813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Firefox -->
+        <test-method signature="edgeTest()[pri:2, instance:TestNGDemo.TestDemo2@60611244]" started-at="2024-04-11T17:13:35 IST" name="edgeTest" finished-at="2024-04-11T17:13:45 IST" duration-ms="10307" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: MicrosoftEdge=123.0.2420.81)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3e2b76da71b46d2430e2419bc2c0b6e6, get {url=https://www.amazon.com}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61825}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\sures\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61825/devtoo..., se:cdpVersion: 123.0.2420.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3e2b76da71b46d2430e2419bc2c0b6e6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: MicrosoftEdge=123.0.2420.81)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3e2b76da71b46d2430e2419bc2c0b6e6, get {url=https://www.amazon.com}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61825}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\sures\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61825/devtoo..., se:cdpVersion: 123.0.2420.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3e2b76da71b46d2430e2419bc2c0b6e6
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:305)
+at TestNGDemo.TestDemo2.edgeTest(TestDemo2.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- edgeTest -->
+      </class> <!-- TestNGDemo.TestDemo2 -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
